@@ -1,0 +1,30 @@
+{
+  "name": "utk-waitlist-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrandonP321/utk-waitlist-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrandonP321/utk-waitlist-server/issues"
+  },
+  "homepage": "https://github.com/BrandonP321/utk-waitlist-server#readme",
+  "dependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "helmet": "^7.1.0",
+    "mongoose": "^8.3.0",
+    "typescript": "^5.4.4"
+  }
+}
