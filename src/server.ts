@@ -46,17 +46,17 @@ app.post("/subscribe", async (req: Request<{}, {}, { email: string }>, res) => {
     console.log({ existingSub });
 
     if (existingSub) {
-      return res.status(400).json({ error: "Already subscribed" });
+      return res.status(400).json({ error: "Already subscribed" }).end();
     }
 
     const sub = await db.Subscriber.create({ email });
 
     console.log(sub);
 
-    res.json({ message: "Subscribed successfully" });
+    return res.json({ message: "Subscribed successfully" }).end();
   } catch (err) {
     console.log(err);
-    res.status(500).json({ error: "Internal server error" });
+    return res.status(500).json({ error: "Internal server error" }).end();
   }
 });
 
